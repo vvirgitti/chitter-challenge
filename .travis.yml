@@ -9,3 +9,7 @@ before_install:
 
 before_script:
   - psql -c 'create database chitter_test;' -U postgres
+
+addons:
+  code_climate:
+    repo_token: 9100a7f1ac150090092044deefae97e125b768f8cfe88603902af3d248abc28d
