@@ -1,0 +1,32 @@
+/Users/vanessa/.rvm/rubies/ruby-2.2.2/bin/ruby -r ./siteconf20150429-43453-1ryz16.rb extconf.rb
+checking for main() in -lpq... yes
+checking for libpq-fe.h... yes
+checking for libpq/libpq-fs.h... yes
+checking for postgres.h... yes
+checking for mb/pg_wchar.h... yes
+checking for catalog/pg_type.h... yes
+checking for localtime_r()... yes
+checking for gmtime_r()... yes
+checking for PQsetClientEncoding()... yes
+checking for pg_encoding_to_char()... yes
+checking for PQfreemem()... yes
+checking for rb_thread_fd_select()... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling do_common.c
+do_common.c:58:3: warning: implicit declaration of function 'gettimeofday' is invalid in C99 [-Wimplicit-function-declaration]
+  gettimeofday(&stop, NULL);
+  ^
+1 warning generated.
+compiling do_postgres.c
+do_postgres.c:263:3: warning: implicit declaration of function 'gettimeofday' is invalid in C99 [-Wimplicit-function-declaration]
+  gettimeofday(&start, NULL);
+  ^
+1 warning generated.
+linking shared-object do_postgres/do_postgres.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 do_postgres.bundle ./.gem.20150429-43453-z866wv/do_postgres
