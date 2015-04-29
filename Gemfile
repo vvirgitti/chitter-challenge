@@ -7,5 +7,7 @@ gem "data_mapper"
 gem "cucumber-sinatra"
 gem "dm-postgres-adapter"
 gem "database_cleaner"
-gem "bcrypt-ruby"
+gem "bcrypt"
 gem "rack-flash3"
+
+gem "codeclimate-test-reporter", group: :test, require: nil

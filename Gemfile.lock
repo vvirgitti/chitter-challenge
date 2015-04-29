@@ -11,6 +11,8 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    codeclimate-test-reporter (0.4.7)
+      simplecov (>= 0.7.1, < 1.0.0)
     cucumber-sinatra (0.5.0)
       templater (>= 1.0.0)
     data_mapper (1.2.0)
@@ -63,6 +65,7 @@ GEM
       dm-core (~> 1.2.0)
     do_postgres (0.10.15)
       data_objects (= 0.10.15)
+    docile (1.1.5)
     extlib (0.9.16)
     fastercsv (1.5.5)
     highline (1.7.1)
@@ -95,6 +98,11 @@ GEM
     rspec-support (3.2.2)
     shotgun (0.9)
       rack (>= 1.0)
+    simplecov (0.10.0)
+      docile (~> 1.1.0)
+      json (~> 1.8)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.0)
     sinatra (1.4.5)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -113,8 +121,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bcrypt-ruby
+  bcrypt
   capybara
+  codeclimate-test-reporter
   cucumber-sinatra
   data_mapper
   database_cleaner
