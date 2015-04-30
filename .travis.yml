@@ -1,18 +1,15 @@
-language: ruby
 rvm: '2.2.1'
 
 script:
   - bundle exec rspec spec
 
 before_install:
- - sudo apt-get update
- - sudo apt-get purge postgresql-9.1 postgresql-9.2 postgresql-9.3
- - sudo apt-get install postgresql-client-common postgresql-9.4
- - sudo service postgresql start
+- sudo apt-get update -qq
+- sudo apt-get install -qq postgresql-server-dev-9.3
 
 before_script:
   - psql -c 'create database chitter_test;' -U postgres
 
 addons:
-	code_climate:
+  code_climate:
     repo_token: 9100a7f1ac150090092044deefae97e125b768f8cfe88603902af3d248abc28d
