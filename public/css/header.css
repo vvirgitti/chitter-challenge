@@ -12,3 +12,8 @@ header #logo {
   display: flex;
   font-family: Helvetica, Arial, Sans-serif;
 }
+
+img {
+	height: 30px;
+	width: 50px;
+}
