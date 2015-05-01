@@ -13,4 +13,5 @@ group :test do
 	gem "capybara"
 	gem "shotgun"
 	gem "rspec"
+	gem "rake"
 end
