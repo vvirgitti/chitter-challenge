@@ -4,7 +4,7 @@ require 'rspec/core/rake_task'
 
 task :auto_upgrade do
   DataMapper.auto_upgrade!
-  puts "Auto-upgrade complete (no data loss"
+  puts "Auto-upgrade complete (no data loss)"
 end
 
 task :auto_migrate do

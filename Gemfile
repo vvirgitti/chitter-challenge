@@ -5,13 +5,13 @@ gem "dm-postgres-adapter"
 gem "database_cleaner"
 gem "bcrypt"
 gem "rack-flash3"
+gem "cucumber-sinatra"
+gem "capybara"
+gem "shotgun"
 
 
 group :test do 
-	gem "codeclimate-test-reporter", group: :test, require: nil
-	gem "cucumber-sinatra"
-	gem "capybara"
-	gem "shotgun"
+	gem "codeclimate-test-reporter", require: nil
 	gem "rspec"
 	gem "rake"
 end
