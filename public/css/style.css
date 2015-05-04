@@ -17,6 +17,7 @@ h1 {
 	font-size: 50px;
 	padding: 10px;
 	margin: 0 auto;
+	font-family: 'Montserrat';
 }
 
 .top {
@@ -26,4 +27,34 @@ h1 {
 
 body {
 	background-color: #ABB8C2;
+}
+
+#sign-up {
+	background-color: green;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    padding: 5px;
+    margin: 0 10px;
+}
+
+#log-in {
+	background-color: grey;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    padding: 5px;
+    margin: 0 10px;
 }

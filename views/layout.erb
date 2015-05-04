@@ -5,7 +5,7 @@
     <title>Chitter</title>
     <link rel="stylesheet" type="text/css" href="/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <link href="http://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   </head>
 
   <body>
@@ -13,7 +13,13 @@
   <header>
     <div class="top">
       <img src="images/cheetah.png">
-      <h1> CHITTER</h1>
+      <h1> CHEET-R</h1>
+      <form id="sign-up" method="get" action="/users/new">
+        <input type="submit" value="Sign up" id="sign-up">
+      </form>
+      <form id="log-in" method="get" action="/sessions/new">
+        <input type="submit" value="Log in" id="log-in">
+      </form>
     </div>
   </header>
 
