@@ -12,7 +12,8 @@ class Chitter < Sinatra::Base
 
   set :views, Proc.new {File.join(root, "..", "views")}
   set :session_secret, 'secret session'
-  set :public_folder, Proc.new { File.join(root,"..", "public") }
+  set :root, File.dirname(__FILE__)
+  set :public_folder, Proc.new {File.join(root, '../public')}
 
 
   DataMapper.setup(:default, "postgres://localhost/chitter_#{env}")
