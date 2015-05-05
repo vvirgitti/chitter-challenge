@@ -58,3 +58,10 @@ body {
     padding: 5px;
     margin: 0 10px;
 }
+
+.error {
+	color: red;
+	font-family: 'Montserrat';
+	font-size: 30px;
+	text-align: center;
+}
