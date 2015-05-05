@@ -34,7 +34,7 @@ class Chitter < Sinatra::Base
 
   post '/cheets' do
     message = params["message"]
-    created_at = params["date"]
+    created_at = Time.now
     user_id = params["user_id"]
     email, password = params[:email], params[:password]
     user = User.authenticate(email, password)

@@ -26,8 +26,6 @@ h2 {
 }
 
 #cheets {
-/*	display: flex;
-	align-items: center;*/
 	display: inline-block;
 }
 
@@ -45,6 +43,21 @@ h2 {
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
 	pointer-events: none;
+}
+
+#openModal {
+	background-color: grey;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    padding: 5px;
+    margin: 0 10px;
 }
 
 .modalDialog:target {

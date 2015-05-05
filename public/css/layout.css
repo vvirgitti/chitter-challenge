@@ -65,3 +65,18 @@ body {
 	font-size: 30px;
 	text-align: center;
 }
+
+#openModal {
+	background-color: grey;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius:6px;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    padding: 5px;
+    margin: 0 10px;
+}
