@@ -9,14 +9,14 @@ This is my version of Twitter, renamed Cheet-R! Users can sign up, log in and lo
 
 ####Build with:
 
-Ruby
-Sinatra
-Postgresql
-Datamapper
-BCrypt
-HTML5
-CSS
-Tested with Rspec
+- Ruby
+- Sinatra
+- Postgresql
+- Datamapper
+- BCrypt
+- HTML5
+- CSS
+- Tested with Rspec
 
 ####Features:
 
@@ -27,5 +27,5 @@ Tested with Rspec
 - Cheets can't be seen without being logged in but to post a cheet, user has to be logged in 
 
 ####Future iterations:
-- Better front-end design
+- More elegant front-end design
 - Allow users to reply to other users' cheets
