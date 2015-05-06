@@ -6,31 +6,52 @@
     <link rel="stylesheet" type="text/css" href="/css/index.css">
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
   </head>
-<br>
-<br>
-<br>
-
-<a href="#openModal">Open Modal</a>
-
-<div id="openModal" class="modalDialog">
-  <div>
-    <a href="#close" title="Close" class="close">X</a>
-      <div id="post-cheet">
-        <form action="/cheets" method="post" id="cheets">
-          Message <input type="text" name="message" id="box">
-          <input type="hidden" name="user_id" id="user_id"value="1">
-          <input type="submit" value="Post Cheet">
+  <body>
+    <header>
+      <div class="top">
+        <img src="images/cheetah.png">
+        <h1> CHEET-R</h1>
+        <form id="sign-up" method="get" action="/users/new">
+          <input type="submit" value="Sign up" id="sign-up">
+        </form>
+        <form id="log-in" method="get" action="/sessions/new">
+          <input type="submit" value="Log in" id="log-in">
         </form>
       </div>
-  </div>
-</div>
+      <div class="user-welcome">
+        <% if current_user %>
+          <span id="welcome-message">
+            Welcome <%= current_user.username%>!
+          </span>
+        <% end %>
+      </div>
+      </header>
 
-<ul>
-  <% @cheets.each do |cheet| %>
-  <% @users.each do |user| %>
-  <li><%= user.name %> - <%= user.username%> - Posted on <%= cheet.created_at %>
-  </br>
-  <%= cheet.message %></br></br></li>
-  <% end %>
-  <% end %>
-</ul>
+    <a href="#openModal">Open Modal</a>
+
+    <div id="openModal" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close">X</a>
+          <div id="post-cheet">
+            <form action="/cheets" method="post" id="cheets">
+              Message <input type="text" name="message" id="box">
+              <input type="hidden" name="date" id="date" value="2015-05-06 15:05:37.141412000 +0100">
+              <input type="hidden" name="user_id" id="user_id" value="1">
+              <input type="submit" value="Post Cheet">
+            </form>
+          </div>
+      </div>
+    </div>
+
+    <ul>
+      <% @cheets.each do |cheet| %>
+      <% @users.each do |user| %>
+      <li><%= user.name %> - <%= user.username%> - Posted on <%= cheet.created_at %>
+      </br>
+      <%= cheet.message %></br></br></li>
+      <% end %>
+      <% end %>
+    </ul>
+
+  </body>
+</html>

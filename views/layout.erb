@@ -9,23 +9,6 @@
   </head>
 
   <body>
-  
-  <header>
-    <div class="top">
-      <img src="images/cheetah.png">
-      <h1> CHEET-R</h1>
-      <!-- <div id="openModal" class="modalDialog"> -->
-      <form id="sign-up" method="get" action="/users/new">
-        <input type="submit" value="Sign up" id="sign-up">
-      </form>
-      <form id="log-in" method="get" action="/sessions/new">
-        <input type="submit" value="Log in" id="log-in">
-      </form>
-    </div>
-  </header>
-
-    <br>
-    <br>
     <div class="error">
     <% if flash[:errors] && !flash[:errors].empty? %>
       Sorry, there were the following problems with your registration:
